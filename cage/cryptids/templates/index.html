@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}Cryptids{% endblock %}
+{% block content %}
+
+
+
+
+<ul>
+        {% for animals in animalss %}
+        <li>
+                <a href="{% url 'cryptids:detail' animals.id %}">
+                {{ animals.animals_text|upper }} 
+                </a>
+        </li> 
+
+{% empty %}
+        <li>No animals</li>
+
+{% endfor %}
+</ul>
+{% endblock %}
