@@ -7,10 +7,9 @@ class Animal(models.Model):
     
     
     def __str__(self):
-        return self.name
+        return(f"{self.name},{self.type}")
+        
 
-    def __str__(self):
-        return self.type
         
 
 class Location(models.Model):
@@ -20,10 +19,7 @@ class Location(models.Model):
     
     
     def __str__(self):
-        return self.location_place
-
-    def __str__(self):
-        return self.country_place
+        return(f"{self.location_place},{self.country_place}")
 
     @property
     def  published_recently(self):
