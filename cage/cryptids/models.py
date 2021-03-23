@@ -4,6 +4,7 @@ from django.utils import timezone
 class Animal(models.Model):
     name = models.CharField(max_length=20)
     type = models.CharField(max_length=20)
+    image = models.ImageField(upload_to='upload/')
     
     
     def __str__(self):
