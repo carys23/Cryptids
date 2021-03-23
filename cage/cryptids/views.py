@@ -1,12 +1,19 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView, ListView
-from .models import City
+from django.http import HttpResponse
+from .models import Animal, Location
+from django.views import View
 
-class HomepageView(TemplateView):
-    template_name = 'home.html'
+def index(request):
+    animals = Animal.objects.all()
+    return HttpResponse(animals)
 
-class SearchResutlsView(ListView):
-    model = City
-    template_name = 'Search_results.html'
+def detail(request, animal_id):
+    animal = Animal.objects.get(pk=animal_id)
+    return HttpResponse(animal)
 
-# Create your views here.
+def place(request, location_id):
+    location = Location.objects.get(pk=location_id)
+    return HttpResponse(location)
+
+def places(request):
+    locations = Location.objects.all()
+    return HttpResponse(locations)
