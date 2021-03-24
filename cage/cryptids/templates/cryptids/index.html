@@ -13,7 +13,7 @@
     {% for animal in animals %}
     <li>
         <a href="{% url 'detail' animal.id %}">
-        {{ animal.name}}
+        {{ animal.name }}
         <img src="{{ animal.image.url }}"> 
         </a>
     </li> 
