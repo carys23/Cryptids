@@ -1,10 +1,11 @@
 from django.http import HttpResponse
 from .models import Animal, Location
 from django.views import View
+from django.shortcuts import render
 
 def index(request):
-    animals = Animal.objects.all()
-    return HttpResponse(animals)
+    animals = {"animals": Animal.objects.all()}
+    return render (request, "cryptids/index.html", animals)
 
 def detail(request, animal_id):
     animal = Animal.objects.get(pk=animal_id)

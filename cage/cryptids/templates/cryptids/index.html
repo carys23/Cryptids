@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Animals{% endblock %}
+{% block CSS %}
+<!-- link for css -->
+{% endblock %}
+
+{% block content %}
+
+
+<ul>
+    {% for animal in animals %}
+    <li>
+        <a href="{% url 'detail' animal.id %}">
+        {{ animal.name}}
+        <img src="{{ animal.image.url }}"> 
+        </a>
+    </li> 
+
+{% empty %}
+        <li>No animals</li>
+
+{% endfor %}
+</ul>
+{% endblock %}
