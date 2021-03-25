@@ -5,10 +5,11 @@ class Animal(models.Model):
     name = models.CharField(max_length=20)
     type = models.CharField(max_length=20)
     image = models.ImageField(upload_to='upload/')
+    description = models.CharField(max_length=255)
     
     
     def __str__(self):
-        return(f"{self.name},{self.type}")
+        return(f"{self.name},{self.type},{self.description}")
         
 
         

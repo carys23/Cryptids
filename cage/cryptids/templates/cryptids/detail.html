@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ animal.name }}{% endblock %}
+{% block CSS %}
+<!-- link for css -->
+{% endblock %}
+
+{% block content %}
+<h1>{{ animal.name }}</h1>
+<img src="{{ animal.image.url }}"> 
+<p>
+{{ animal.description }}
+</p>
+{% endblock %}
