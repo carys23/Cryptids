@@ -8,8 +8,8 @@ def index(request):
     return render (request, "cryptids/index.html", animals)
 
 def detail(request, animal_id):
-    animal = Animal.objects.get(pk=animal_id)
-    return HttpResponse(animal)
+    animal = {"animal": Animal.objects.get(pk=animal_id)}
+    return render (request, "cryptids/detail.html", animal)
 
 def place(request, location_id):
     location = Location.objects.get(pk=location_id)
