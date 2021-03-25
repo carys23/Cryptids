@@ -9,10 +9,10 @@ def index(request):
 
 def detail(request, animal_id):
     animal = {"animal": Animal.objects.get(pk=animal_id)}
-    return render (request, "cryptids/detail.html", animal)
+    return render (request, "cryptids/detail.html" , animal)
 
 def place(request, location_id):
-    location = Location.objects.get(pk=location_id)
+    location = {"location": Location.objects.get(pk=location_id)}
     return HttpResponse(location)
 
 def places(request):
