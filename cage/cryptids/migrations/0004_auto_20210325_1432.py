@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='animal',
             name='location',
-            field=models.ForeignKey(default='unknown', on_delete=django.db.models.deletion.CASCADE, to='cryptids.location'),
+            field=models.ForeignKey(default= 1, on_delete=django.db.models.deletion.CASCADE, to='cryptids.location'),
             preserve_default=False,
         ),
     ]
