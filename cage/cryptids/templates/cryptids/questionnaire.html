@@ -8,8 +8,19 @@
 
 {% block content %}
 <div class="form-style-6">
-    <h1>Form</h1>
+    <h1>Questionnaire</h1>
     <form>
+        <ul>
+            {% for question in questions %}
+            <li>
+                    {% url 'polls:detail' animal.id %}
+                    {{ question.question_text|upper }} {{ question.pub_date|upper }}
+                    
+                </li> 
+    {% empty %}
+            <li>No questions</li>
+    {% endfor %}
+    </ul>
     <input type="text" name="field1" placeholder="Your Name" />
     <input type="email" name="field2" placeholder="Email Address" />
     <textarea name="field3" placeholder="Type your Message"></textarea>
