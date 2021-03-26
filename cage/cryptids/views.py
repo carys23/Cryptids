@@ -18,3 +18,9 @@ def place(request, location_id):
 def places(request):
     locations = Location.objects.all()
     return HttpResponse(locations)
+
+def login(request):
+    return render (request, "cryptids/Home.html")
+
+def register(request):
+    return render (request, "cryptids/register.html")
