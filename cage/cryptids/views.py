@@ -24,3 +24,6 @@ def login(request):
 
 def register(request):
     return render (request, "cryptids/register.html")
+
+def form(request):
+    return render (request, "cryptids/Form.html")
