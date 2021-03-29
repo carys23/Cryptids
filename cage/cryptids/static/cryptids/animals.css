@@ -1,0 +1,128 @@
+.image2 {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin: 8px;
+    width: 80px;
+    border-radius: 55%;
+    border: 8px solid #23a897;}
+
+
+
+#slideshow ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;}
+        
+        
+#slideshow .slides {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+        }
+        
+#slideshow .slides li {
+    flex-direction: row;
+    display: flex;
+    float: left; }
+    
+
+.tech-slideshow {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);}
+        
+.tech-slideshow .mover {
+    animation: moveSlideshow 12s linear infinite;}
+        
+    @keyframes moveSlideshow {
+        100% { 
+        transform: translateX(-66.6666%);  }}
+
+
+.wrap {
+    display: flex;
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+    height: 390px;
+    width: 370px;
+    margin-right: -100px;
+    border-radius: 55%;
+}
+/* 
+body {
+    background-image: url(./welshdragron.jpg);
+   margin-top: 40px;
+    background-repeat: no-repeat;
+    position: relative;
+
+} */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #23a897 ;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: grid;
+    margin-left: 80px;
+    
+    border: 4px solid white;
+    
+
+}
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: #23a897;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 400px;
+}
+
+.div_icons {
+    background-color:#23a897;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+    border-radius: 55%;
+    
+
+}
+
+.div_icons>p {
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;}
+
+a {
+    text-decoration: none;
+    color: white;}
+    
+.icons a:hover {
+        color: black;}
+
+.icons {
+    display: flex;
+}

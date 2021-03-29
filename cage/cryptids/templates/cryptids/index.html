@@ -3,24 +3,32 @@
 
 {% block title %}Animals{% endblock %}
 {% block CSS %}
-<!-- link for css -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'cryptids/index.css' %}">
 {% endblock %}
 
 {% block content %}
+<div class="about">
+    
+    <p>This app is all about magical and mysterious animals. <br> Within the app you can track the location of each animal with live updates of last seen sightings.</p>
+</div>
+
+<div class="icons">
+    <div class="icons1">
+    <div class="div_icons"><a href="./detail.html" class="icon-block">
+    <i class="material-icons pets"style="font-size:100px;" >pets</i>   <p>Animals</p> </a> </div>
 
 
-<ul>
-    {% for animal in animals %}
-    <li>
-        <a href="{% url 'detail' animal.id %}">
-        {{ animal.name }}
-        <img src="{{ animal.image.url }}"> 
-        </a>
-    </li> 
+    <div class="div_icons"><a href="./Home.html" class="icon-block">
+    <i class="material-icons map" style="font-size:100px;" >map</i> <p>Locations </P></a> </div>  </div>
 
-{% empty %}
-        <li>No animals</li>
+        <div class="icons2">
+       <div class="div_icons"> <a href="./Home.html" class="icon-block">   
+    <i class="material-icons add_location_alt" style="font-size:100px;">add_location_alt </i> <p> Add new sighten </P></a> </div> 
+        <div class="div_icons"><a href="./detail.html" class="icon-block">
+            <i class="material-icons pets"style="font-size:100px;" >pets</i>   <p>Animals</p> </a> </div> 
+       
+</div>
+</div>
 
-{% endfor %}
-</ul>
 {% endblock %}

@@ -3,13 +3,63 @@
 
 {% block title %}{{ animal.name }}{% endblock %}
 {% block CSS %}
-<!-- link for css -->
+<link rel="stylesheet" href="{% static 'cryptids/index.css' %}">
 {% endblock %}
 
 {% block content %}
+
+
+        <div class="tech-slideshow"> 
+        <div class="mover"> <img class="image2" src="./welshdragron.jpg">   </div>
+        <div class="mover">  <img class="image2"src="./unicorn.png"> </div>
+        <div class="mover"> <img class="image2"src="./welshdragron.jpg">   </div>
+        <div class="mover">  <img class="image2"src="./owl.png"> </div>
+        <div class="mover"> <img class="image2" src="./lizard.png">   </div>
+        <div class="mover">  <img class="image2"src="./ninetails.png"> </div>
+        <div class="mover"> <img class="image2"src="./rhys.jpg">   </div>
+        <div class="mover">  <img class="image2"src="./cat.png"> </div>
+        <div class="mover"> <img class="image2"src="./coronavirus-png.png">   </div>
+        <div class="mover">  <img class="image2"src="./coronavirus_PNG33.png"> </div>
+        <div class="mover"> <img class="image2"src="./picture1.jpg">   </div>
+        <div class="mover">  <img class="image2"src="./conor.jpg"> </div>
+    </div> 
+
+<div class="wrap">
+    <img class="image"src="./coronavirus-png.png">
+<div class="icons"> 
+
+    <div class="div_icons"><a href="./firstp age.html" class="icon-block">
+    <i class="material-icons home"style="font-size:80px;" >home</i> </a>  <p>Home</p>  </div>
+
+
+    <div class="div_icons"><a href="./Home.html" class="icon-block">
+    <i class="material-icons map" style="font-size:80px;" >map</i> </a><p>Locations </P> </div>  
+
+       
+       <div class="div_icons"> <a href="./Home.html" class="icon-block">   
+    <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a><p> Add new sighten </P> </div> 
+
+       <div class="div_icons"> <a href="./Home.html" class="icon-block">
+            <i class="material-icons pets"style="font-size:80px;" >pets</i> </a>  <p>Animals</p>   </div>
+
+        </div>
+
+   
+
+</div>
+   <div class="about">
+    
+    <p>This app is all about magical and mysterious animals. Within the app you can track the location of each animal with live updates of last seen sightings.
+        This app is all about magical and mysterious animals. Within the app you can track the location of each animal with live updates of last seen sightings.
+        This app is all about magical and mysterious animals. Within the app you can track the location of each animal with live updates of last seen sightings.
+        This app is all about magical and mysterious animals. Within the app you can track the location of each animal with live updates of last seen sightings.
+    </p>
+
+
+<!-- 
 <h1>{{ animal.name }}</h1>
 <img src="{{ animal.image.url }}"> 
 <p>
 {{ animal.description }} {{ animal.country_place }} {{ animal.location_place }}
-</p>
+</p> -->
 {% endblock %}
