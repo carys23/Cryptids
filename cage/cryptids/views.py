@@ -27,6 +27,3 @@ def register(request):
 
 def form(request):
     return render (request, "cryptids/Form.html")
-
-def questionnaire(request):
-    return render (request, "cryptids/questionnaire.html")
