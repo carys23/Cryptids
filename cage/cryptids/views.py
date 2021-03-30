@@ -27,3 +27,7 @@ def register(request):
 
 def form(request):
     return render (request, "cryptids/Form.html")
+
+def animals(request):
+    animals = {"animals": Animal.objects.all()}
+    return render  ( request, "cryptids/animal.html",animals)
