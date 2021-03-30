@@ -12,9 +12,10 @@ def detail(request, animal_id):
     return render (request, "cryptids/detail.html" , animal)
 
 def location(request, location_id):
-    location = {"location": Location.objects.get(pk=location_id)}
-    animals = {"animals": Location.objects.get(pk=location_id).animal_set.all()}
-    return render (request, "cryptids/location.html", animals, location)
+    place = Location.objects.get(pk=location_id)
+    animals = place.animal_set.all()
+    context = {"location": place, "animals": animals}
+    return render (request, "cryptids/location.html", context)
 
 def locations(request):
     locations = {"locations": Location.objects.all()}

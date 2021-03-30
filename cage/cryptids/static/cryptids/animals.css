@@ -45,12 +45,12 @@
 .profile {
     display: flex;
     justify-content: center;
-    margin-left: 40%;
+    align-items: center;
     height: 230px;
     width: 210px;
     border-radius: 55%;
     border: 22px solid #23a897;
-    flex-direction: column;
+    
 }
 
 h1 {
@@ -64,7 +64,12 @@ h1 {
     margin-bottom: -30px;
     font-family: 'New Tegomin' ;
 }
+.location {
+    font-size: 50px;
+    font-family: 'New Tegomin' ;
+    color: #23a897;
 
+}
 .image {
     display: flex;
     justify-content: center;
