@@ -3,23 +3,61 @@
 
 {% block title %}{{ animal.name }}{% endblock %}
 {% block CSS %}
-<!-- link for css -->
+<link rel="stylesheet" href="{% static 'cryptids/animals.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
+<div class="icons">
 
-<ul>
-    {% for animal in animals %}
-    <li>
-        <a href="{% url 'detail' animal.id %}">
-        {{ animal.name }}
-        <img src="{{ animal.image.url }}"> 
-        </a>
-    </li> 
-   
-    {% empty %}
+    <div class="div_icons"><a href="{% url 'locations' %}" class="icon-block">
+            <i class="material-icons map" style="font-size:80px;">map</i> </a>
+        <p>Locations </P>
+    </div>
+
+
+    <div class="div_icons"> <a href="{% url 'form' %}" class="icon-block">
+            <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a>
+        <p> Add new sightings </P>
+    </div>
+
+    <div class="div_icons"> <a href="{% url 'animals' %}" class="icon-block">
+            <i class="material-icons pets" style="font-size:80px;">pets</i> </a>
+        <p>Animals</p>
+    </div>
+
+
+
+    <div class="div_icons"> <a href="{% url 'index' %}" class="icon-block">
+            <i class="material-icons home" style="font-size:80px;">home</i> </a>
+        <p>Home</p>
+    </div>
+
+</div>
+
+</div>
+<div class="about">
+    <ul>
+        {% for animal in animals %}
+        <li>
+            <div class="animal_info">
+                <a href="{% url 'detail' animal.id %}">
+                    <div class="name"> {{ animal.name }} </div>
+                    <div class="likes">
+                        <div class="div_likes">
+                            <i class="material-icons favorite" style="font-size:100px;">favorite</i>
+                        </div>
+                        {{ animal.likes }}
+                    </div>
+                    <img class="profile" src="{{ animal.image.url }}">
+                </a>
+        </li>
+
+        {% empty %}
         <li>No animals</li>
 
-{% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+</div>
+</div>
 {% endblock %}
