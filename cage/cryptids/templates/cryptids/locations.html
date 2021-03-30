@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ animal.name }}{% endblock %}
+{% block CSS %}
+<!-- link for css -->
+{% endblock %}
+
+{% block content %}
+
+<ul>
+    {% for location in locations %}
+
+    <li>
+        <a href="{% url 'location' location.id %}">
+        {{ location.location_place }} {{ location.country_place }}
+        </a>
+    </li> 
+   
+    {% empty %}
+        <li>No locations</li>
+
+{% endfor %}
+</ul>
+{% endblock %}
