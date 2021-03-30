@@ -11,13 +11,15 @@ def detail(request, animal_id):
     animal = {"animal": Animal.objects.get(pk=animal_id)}
     return render (request, "cryptids/detail.html" , animal)
 
-def place(request, location_id):
-    location = {"location": Location.objects.get(pk=location_id)}
-    return HttpResponse(location)
+def location(request, location_id):
+    place = Location.objects.get(pk=location_id)
+    animals = place.animal_set.all()
+    context = {"location": place, "animals": animals}
+    return render (request, "cryptids/location.html", context)
 
-def places(request):
-    locations = Location.objects.all()
-    return HttpResponse(locations)
+def locations(request):
+    locations = {"locations": Location.objects.all()}
+    return render (request,"cryptids/locations.html", locations)
 
 def login(request):
     return render (request, "cryptids/login.html")
