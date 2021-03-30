@@ -9,40 +9,40 @@
 
 {% block content %}
 
+<div class="icons">
 
-        
-    
-<div class="icons"> 
+   <div class="div_icons"><a href="./firstp age.html" class="icon-block">
+         <i class="material-icons home" style="font-size:80px;">home</i> </a>
+      <p>Home</p>
+   </div>
 
-    <div class="div_icons"><a href="./firstp age.html" class="icon-block">
-    <i class="material-icons home"style="font-size:80px;" >home</i> </a>  <p>Home</p>  </div>
+   <div class="div_icons"><a href="./Home.html" class="icon-block">
+         <i class="material-icons map" style="font-size:80px;">map</i> </a>
+      <p>Locations </P>
+   </div>
 
+   <div class="div_icons"> <a href="./Home.html" class="icon-block">
+         <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a>
+      <p> Add new sightings </P>
+   </div>
 
-    <div class="div_icons"><a href="./Home.html" class="icon-block">
-    <i class="material-icons map" style="font-size:80px;" >map</i> </a><p>Locations </P> </div>  
-
-       
-       <div class="div_icons"> <a href="./Home.html" class="icon-block">   
-    <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a><p> Add new sightings </P> </div> 
-
-       <div class="div_icons"> <a href="./Home.html" class="icon-block">
-            <i class="material-icons pets"style="font-size:80px;" >pets</i> </a>  <p>Animals</p>   </div>
-
-        </div>
-
-   
+   <div class="div_icons"> <a href="./Home.html" class="icon-block">
+         <i class="material-icons pets" style="font-size:80px;">pets</i> </a>
+      <p>Animals</p>
+   </div>
 
 </div>
-   <div class="about">
-    
-    
 
+</div>
+<div class="about">
 
-
-<h1>{{ animal.name }}</h1>
-<img class="profile" src="{{ animal.image.url }}"> 
-<p>
-{{ animal.description }} {{ animal.country_place }} {{ animal.location_place }}
-</p>
+   <h1>{{ animal.name }}</h1>
+   <img class="profile" src="{{ animal.image.url }}">
+   <p>
+      {{ animal.description }}
+   </p>
+   <div class="location">
+      {{ animal.location }}
+   </div>
 </div>
 {% endblock %}

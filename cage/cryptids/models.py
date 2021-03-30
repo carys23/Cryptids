@@ -7,7 +7,7 @@ class Location(models.Model):
     country_place = models.CharField(max_length=20)
     
     def __str__(self):
-        return(f"{self.location_place},{self.country_place}")
+        return(f"{self.location_place}, {self.country_place}")
 
     @property
     def  published_recently(self):
