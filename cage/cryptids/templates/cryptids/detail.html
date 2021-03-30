@@ -3,13 +3,43 @@
 
 {% block title %}{{ animal.name }}{% endblock %}
 {% block CSS %}
-<!-- link for css -->
+<link rel="stylesheet" href="{% static 'cryptids/animals.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<h1>{{ animal.name }}</h1>
-<img src="{{ animal.image.url }}"> 
-<p>
-{{ animal.description }} {{ animal.country_place }} {{ animal.location_place }}
-</p>
+
+<div class="icons">
+
+    <div class="div_icons"><a href="./Home.html" class="icon-block">
+    <i class="material-icons map" style="font-size:80px;" >map</i> </a><p>Locations </P> </div>  
+
+       
+       <div class="div_icons"> <a href="{% url 'form' %}"class="icon-block">   
+    <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a><p> Add new sightings </P> </div> 
+
+       <div class="div_icons"> <a href="./Home.html" class="icon-block">
+            <i class="material-icons pets"style="font-size:80px;" >pets</i> </a>  <p>Animals</p>   </div>
+
+        </div>
+
+   <div class="div_icons"> <a href="./Home.html" class="icon-block">
+         <i class="material-icons pets" style="font-size:80px;">pets</i> </a>
+      <p>Animals</p>
+   </div>
+
+</div>
+
+</div>
+<div class="about">
+
+   <h1>{{ animal.name }}</h1>
+   <img class="profile" src="{{ animal.image.url }}">
+   <p>
+      {{ animal.description }}
+   </p>
+   <div class="location">
+      {{ animal.location }}
+   </div>
+</div>
 {% endblock %}

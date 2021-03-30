@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@200&family=Kiwi+Maru:wght@300&display=swap');
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #23a897 ;
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: grid;
+}
+
+
+.icons1, .icons2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    color: #23a897 ;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
+}
+
+.div_icons {
+    background-color:white ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 180px;
+    align-content: center;
+    text-align: center;
+    opacity: 80%;
+
+}
+
+.div_icons>p {
+    color: #23a897;
+    margin-top: 5px;
+    font-size: 23px;}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);}
+    
+.icons a:hover {
+        color: black;}
+
+
+img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 55%;
+    border: 8px solid #23a897;}
+
+
+
+#slideshow ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;}
+        
+        
+#slideshow .slides {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+        }
+        
+#slideshow .slides li {
+    flex-direction: row;
+    display: flex;
+    float: left; }
+    
+
+.tech-slideshow {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);}
+        
+.tech-slideshow .mover {
+    animation: moveSlideshow 12s linear infinite;}
+        
+    @keyframes moveSlideshow {
+        100% { 
+        transform: translateX(-66.6666%);  }} 
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+    background-image: url(./banner.png);
+    font-size: 80px;
+    background-color: #23a897;
+    width: 100%;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    padding-bottom: 55px;
+
+}
+
+.material-icons {
+    color:#23a897;
+    opacity: 100%;
+}
+p {
+    color:#003D35;
+    font-size: 30px;
+    font-family: 'Kiwi Maru';
+}
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: -70px;
+    border-left: 4px dotted#23a897;
+    border-right: 4px dotted #23a897;
+    border-top: 4px dotted#23a897;
+    border-bottom: 4px dotted#23a897;
+    padding: 8px, 8px, 8px, 8px;
+    background-color: white;
+    opacity: 80%;
+}
+
+body {
+    background-image: url(./ninetails.png);
+    background-size: 1400px;
+    background-repeat: no-repeat; }

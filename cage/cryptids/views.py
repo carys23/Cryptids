@@ -20,7 +20,7 @@ def places(request):
     return HttpResponse(locations)
 
 def login(request):
-    return render (request, "cryptids/Home.html")
+    return render (request, "cryptids/login.html")
 
 def register(request):
     return render (request, "cryptids/register.html")
