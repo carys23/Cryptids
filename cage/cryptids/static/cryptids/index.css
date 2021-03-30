@@ -61,10 +61,8 @@ a {
 
 img {
     display: flex;
-    flex-direction: row;
-    height: 80px;
-    margin: 8px;
-    width: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 55%;
     border: 8px solid #23a897;}
 
@@ -106,7 +104,6 @@ img {
 
 h1 {
     margin-top: 40px;
-    /* margin-bottom: -40px; */
     text-align: center;
     background-image: url(./banner.png);
     font-size: 80px;
