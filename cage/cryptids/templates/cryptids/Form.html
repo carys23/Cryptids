@@ -3,17 +3,45 @@
 
 {% block title %}Form{% endblock %}
 {% block CSS %}
-<link rel="stylesheet" href="{% static 'cryptids/form.css' %}">
+<link rel="stylesheet" href="{% static 'cryptids/login.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<div class="form-style-6">
-    <h1>Form</h1>
-    <form>
-    <input type="text" name="field1" placeholder="Animal name" />
-    <input type="location" name="field2" placeholder="Animal Locations" />
-    <textarea name="text" placeholder="Discription"></textarea>
-    <input type="submit" value="Send" />
-    </form>
+
+<div id="container-add_animal">
+    <div id="title">
+        <i class="material-icons pets"> pets</i> Add New Animal
+
     </div>
+    
+    <form>
+        
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">pets </i>
+            </div>
+            <input id="username" placeholder="Animal name" type="text" required class="validate" autocomplete="off">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">add_location </i>
+            </div>
+            <input id="location" placeholder="Location" type="text" required class="validate" autocomplete="off">
+        </div>
+
+        <div>
+            <br>
+            Animal Discription:<br>
+             <br>
+            <textarea name="text" rows="5" cols="20" placeholder="Discription"></textarea> <br>
+            <br>
+            <input type="submit" value="submit" /> <br>
+
+        </div>
+
+    </form>
 {% endblock %}
