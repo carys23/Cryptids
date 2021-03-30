@@ -1,13 +1,7 @@
-.image2 {
-    display: flex;
-    flex-direction: row;
-    height: 80px;
-    margin: 8px;
-    width: 80px;
-    border-radius: 55%;
-    border: 8px solid #23a897;}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@200&family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 #slideshow ul {
     display: flex;
@@ -48,13 +42,34 @@
     display: flex;
 }
 
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+    height: 230px;
+    width: 210px;
+    border-radius: 55%;
+    border: 22px solid #23a897;
+    flex-direction: column;
+}
+
+h1 {
+    background-color:  #23a897;
+    height: 120px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+    font-size: 75px;
+    margin-bottom: -30px;
+    font-family: 'New Tegomin' ;
+}
 
 .image {
     display: flex;
     justify-content: center;
     height: 390px;
     width: 370px;
-    margin-right: -100px;
     border-radius: 55%;
 }
 /* 
@@ -82,18 +97,14 @@ body {
     
 
 }
-
-.about {
+.img {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    margin-left: 30px;
-    background-color: #23a897;
-    color: white;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-left: 400px;
-}
+    justify-content: center;
+    height: 590px;
+    width: 470px;
+    border-radius: 55%;}
+
+
 
 .div_icons {
     background-color:#23a897;
@@ -125,4 +136,22 @@ a {
 
 .icons {
     display: flex;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-left: 4px dotted#23a897;
+    border-right: 4px dotted #23a897;
+    border-top: 4px dotted#23a897;
+    border-bottom: 4px dotted#23a897;
+    padding: 8px, 8px, 8px, 8px;
+    background-color: white;
+    opacity: 80%;
 }
