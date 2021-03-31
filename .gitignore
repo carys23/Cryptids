@@ -252,4 +252,4 @@ $RECYCLE.BIN/
 .DS_Store
 
 # DB file
-.db.sqlite3
+*.db.sqlite3
