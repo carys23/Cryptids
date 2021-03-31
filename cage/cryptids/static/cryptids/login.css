@@ -23,6 +23,17 @@ body {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+#container-add_animal {
+    background-color: #1D1F20;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    width: 340px;
+    height: 445px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
 #container-register {
     background-color: #1D1F20;
@@ -181,5 +192,14 @@ input[type=email]:focus {
 
 .remember-me {
     margin-top: 10px;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+}
 
+/*.form{
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: #1A1C1D;
+    font-size: 
+
+}
