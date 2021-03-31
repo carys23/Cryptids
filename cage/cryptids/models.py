@@ -23,4 +23,10 @@ class Animal(models.Model):
     
     def __str__(self):
         return(f"{self.name},{self.type},{self.description}")
+
+class Sighting(models.Model):
+    location = models.ForeignKey(Location, on_delete = models.CASCADE)
+    animal = models.ForeignKey(Animal,on_delete = models.CASCADE)
+    description = models.TextField()
+    
         

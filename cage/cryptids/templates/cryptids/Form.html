@@ -11,17 +11,17 @@
 
 <div id="container-add_animal">
     <div id="title">
-        <i class="material-icons pets"> pets</i> Add New Animal
+        <i class="material-icons pets"> pets</i> Add sighting
 
     </div>
     
-    <form>
-        
-        <div class="input">
+    <form method="POST" action="{% url 'form' %}">
+        {% csrf_token %}
+        <div class="input" >
             <div class="input-addon">
                 <i class="material-icons">pets </i>
             </div>
-            <input id="username" placeholder="Animal name" type="text" required class="validate" autocomplete="off">
+            <input id="username" placeholder="Animal name" type="text" required class="validate" autocomplete="off" name="animal_name">
         </div>
 
         <div class="clearfix"></div>
@@ -30,14 +30,14 @@
             <div class="input-addon">
                 <i class="material-icons">add_location </i>
             </div>
-            <input id="location" placeholder="Location" type="text" required class="validate" autocomplete="off">
+            <input id="location" placeholder="Location" type="text" required class="validate" autocomplete="off" name = "location">
         </div>
 
         <div>
             <br>
-            Animal Discription:<br>
+            Animal Description:<br>
              <br>
-            <textarea name="text" rows="5" cols="20" placeholder="Discription"></textarea> <br>
+            <textarea name="text" rows="5" cols="20" placeholder="Description"></textarea> <br>
             <br>
             <input type="submit" value="submit" /> <br>
 
