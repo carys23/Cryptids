@@ -14,7 +14,9 @@
     display: grid;
 }
 
-
+.icons a:hover {
+    color: black;
+}
 .icons1, .icons2 {
     display: flex;
     justify-content: center;
@@ -51,57 +53,6 @@
     margin-top: 5px;
     font-size: 23px;}
 
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);}
-    
-.icons a:hover {
-        color: black;}
-
-
-img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border-radius: 55%;
-    border: 8px solid #23a897;}
-
-
-
-#slideshow ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;}
-        
-        
-#slideshow .slides {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-        }
-        
-#slideshow .slides li {
-    flex-direction: row;
-    display: flex;
-    float: left; }
-    
-
-.tech-slideshow {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    overflow: hidden;
-    transform: translate3d(0, 0, 0);}
-        
-.tech-slideshow .mover {
-    animation: moveSlideshow 12s linear infinite;}
-        
-    @keyframes moveSlideshow {
-        100% { 
-        transform: translateX(-66.6666%);  }} 
-
 h1 {
     margin-top: 40px;
     text-align: center;
@@ -109,10 +60,9 @@ h1 {
     font-size: 80px;
     background-color: #23a897;
     width: 100%;
-    height: 130px;
+    height: 20%;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 80%;
     padding-bottom: 55px;
 
 }
@@ -121,6 +71,9 @@ h1 {
     color:#23a897;
     opacity: 100%;
 }
+.div_icons a:hover {
+    color: black;}
+
 p {
     color:#003D35;
     font-size: 30px;

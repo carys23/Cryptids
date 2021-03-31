@@ -5,21 +5,50 @@
 About
 {% endblock %}
 {% block CSS %}
-<!-- link for css -->
+<link rel="stylesheet" href="{% static 'cryptids/about.css' %}">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 {% endblock %}
 
 {% block content %}
-    <div>
-        <H2>Olubukola Falade</H2>
-        I am a graduate of Financial Services. 
-    </div>
-    
-    <div>
-        <H2>Carys</H2> 
-    </div>
-    
-    <div>
-    <H2>Edwine</H2>
-    </div>
+<div class="wrap">
+<div class="div_icons"> <a href="{% url 'index' %}">
+        <i class="material-icons home" style="font-size:80px;">home</i> </a>
+    <p>Home</p>
+</div>
 
+<div class="div_icons"><a href="{% url 'locations' %}">
+        <i class="material-icons map" style="font-size:80px;">map</i> </a>
+    <p>Locations </P>
+</div>
+
+
+<div class="div_icons"> <a href="{% url 'form' %}">
+        <i class="material-icons add_location_alt" style="font-size:80px;">add_location_alt </i> </a>
+    <p> Add new sightings </P>
+</div>
+
+<div class="div_icons"> <a href="{% url 'animals' %}" >
+        <i class="material-icons pets" style="font-size:80px;">pets</i> </a>
+    <p>Animals</p>
+</div>
+
+</div>
+<div class="about">
+<div>
+    <H2>Olubukola Falade</H2>
+    <p>I am a graduate of Financial Services. </p>
+</div>
+
+<div>
+    <H2>Carys</H2>
+    <img class="profile" src="{% static 'cryptids/me.jpg' %}">
+    <P>From the project we have learnt about how to connected information within the database to interact with the user to update the information on the database and how that will display. </P>
+</div>
+
+<div>
+    <H2>Edwine</H2>
+</div>
+
+</div>
 {% endblock %}
