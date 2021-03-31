@@ -120,12 +120,13 @@ body {
 .about>ul>li {
     list-style-type: none;
 }
+/*
 .img {
     display: flex;
     justify-content: center;
     height: 590px;
     width: 470px;
-    border-radius: 55%;}
+    border-radius: 55%;}*/
 
 
 
