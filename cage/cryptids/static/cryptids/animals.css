@@ -50,9 +50,23 @@
     width: 210px;
     border-radius: 55%;
     border: 22px solid #23a897;
+    margin-left: 40%;
     
 }
 
+.div_likes {
+    color: #23a897;}
+
+.animal_info>a {
+    font-size: 50px;
+    font-family: 'New Tegomin' ;
+    color: #23a897;
+    text-decoration: none;}
+
+.animal_info{
+    display: flex;
+    justify-content: center;
+}
 h1 {
     background-color:  #23a897;
     height: 120px;
@@ -102,6 +116,10 @@ body {
     
 
 }
+
+.about>ul>li {
+    list-style-type: none;
+}
 .img {
     display: flex;
     justify-content: center;
@@ -132,7 +150,7 @@ body {
     margin-top: 5px;
     font-size: 20px;}
 
-a {
+.div_icons>a {
     text-decoration: none;
     color: white;}
     
@@ -148,8 +166,6 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-left: 60px;
-    margin-right: 60px;
     margin-bottom: 10px;
     margin-top: 10px;
     border-left: 4px dotted#23a897;
@@ -159,4 +175,5 @@ a {
     padding: 8px, 8px, 8px, 8px;
     background-color: white;
     opacity: 80%;
+    list-style-type: none;
 }
