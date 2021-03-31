@@ -33,3 +33,6 @@ def form(request):
 def animals(request):
     animals = {"animals": Animal.objects.all()}
     return render  ( request, "cryptids/animal.html",animals)
+
+def about (request):
+    return render (request, "cryptids/About.html")
