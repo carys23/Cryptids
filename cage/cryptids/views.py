@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from .models import Animal, Location
+from .models import Animal, Location, Sighting
 from django.views import View
 from django.shortcuts import render
 
@@ -28,8 +28,16 @@ def register(request):
     return render (request, "cryptids/register.html")
 
 def form(request):
+    if request.POST:
+        animal = Animal.objects.get(name=request.POST.get('animal_name'))
+        location = Location.objects.get(location_place =request.POST.get('location'))
+        seen = Sighting(animal=animal,location = location, description =request.POST.get('text'))
+        seen.save()
     return render (request, "cryptids/Form.html")
-
+    
 def animals(request):
     animals = {"animals": Animal.objects.all()}
     return render  ( request, "cryptids/animal.html",animals)
+
+def about (request):
+    return render (request, "cryptids/About.html")
