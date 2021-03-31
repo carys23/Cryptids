@@ -32,8 +32,6 @@
       <p>Animals</p>
    </div>
 
-  
-
 </div>
 
 
@@ -41,10 +39,10 @@
 
 <div class="about">
 
-   <img class="profile" src="{{ animal.image.url }}">
-   <p>
+   <div class="main_profile"><img src="{{ animal.image.url }}"></div>
+   <div class="about2">
       {{ animal.description }}
-   </p>
+   </div>
    <div class="location">
       {{ animal.location }}
    </div>

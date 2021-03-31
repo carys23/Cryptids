@@ -16,10 +16,7 @@
     <p>Home</p>
 </div>
 
-    <div class="div_icons"><a href="{% url 'locations' %}"class="icon-block"></a>
-            <i class="material-icons map" style="font-size:80px;">map</i> </a>
-        <p>Locations </P>
-    </div>
+   
 
 
     <div class="div_icons"> <a href="{% url 'form' %}" class="icon-block">
@@ -47,7 +44,7 @@
         <li>
             <a href="{% url 'detail' animal.id %}">
                <h2> {{ animal.name }} </h2>
-                <img src="{{ animal.image.url }}">
+               <div class="main_profile"><img src="{{ animal.image.url }}"> </div>
             </a>
         </li>
 
