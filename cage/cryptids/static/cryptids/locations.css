@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+    
+    background-image: url(./worldmap.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top 35px right 60px;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    font-family:'New Tegomin';
+    list-style: none;
+   /* letter-spacing: 2.5px;*/
+    text-decoration: none;
+    
+}
+a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    font-family:'New Tegomin';
+   /* list-style: none;*/
+    letter-spacing: 2.5px;
+}
+li:before{
+    content: "\2625";
+
+}
