@@ -4,24 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 
+        
 
 
-.wrap {
-    display: flex;
-}
 
-.profile {
+
+.wrap{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 25%;
-    border-radius: 55%;
-    border: 22px solid #23a897;
-    
 }
-
-.div_likes {
-    color: #23a897;}
 
 .animal_info>a {
     font-size: 50px;
@@ -33,15 +24,16 @@
     display: flex;
     justify-content: center;
 }
-h1 {
+h2 {
     background-color:  #23a897;
     height: 10%;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     width: 100%;
     margin-top: 40px;
     color: white;
     font-size: 75px;
-
+    text-align: center;
+    margin-bottom: -40px;
     font-family: 'New Tegomin' ;
 }
 .location {
@@ -86,14 +78,19 @@ body {
 .about>ul>li {
     list-style-type: none;
 }
-/*
-.img {
-    display: flex;
-    justify-content: center;
-    height: 590px;
-    width: 470px;
-    border-radius: 55%;}*/
 
+.wrap a:hover{
+    color: black;
+}
+.profile {
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: auto;
+    border-radius: 55%;
+    border: 22px solid #23a897;
+    
+}
 
 
 .div_icons {
@@ -141,6 +138,10 @@ body {
     border-bottom: 4px dotted#23a897;
     padding: 8px, 8px, 8px, 8px;
     background-color: white;
-    opacity: 80%;
-    list-style-type: none;
+    opacity: 80%;;
+    color: rgb(15, 15, 15);
+    font-size: 30px;
+    font-family:'New Tegomin';
+   /* list-style: none;*/
+    letter-spacing: 2.5px;
 }
