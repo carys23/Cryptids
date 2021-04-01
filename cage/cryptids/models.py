@@ -1,6 +1,8 @@
 from django.db import models
 import datetime
 from django.utils import timezone
+from django import forms
+from django.forms import ModelForm
 
 class Location(models.Model):
     location_place = models.CharField(max_length=200)
@@ -24,9 +26,15 @@ class Animal(models.Model):
     def __str__(self):
         return(f"{self.name},{self.type},{self.description}")
 
-class Sighting(models.Model):
-    location = models.ForeignKey(Location, on_delete = models.CASCADE)
-    animal = models.ForeignKey(Animal,on_delete = models.CASCADE)
-    description = models.TextField()
+class Sighting(ModelForm):
+    location = forms.ModelChoiceField(queryset = Location.objects.all())
+    animal = forms.ModelChoiceField(queryset = Animal.objects.all())
+    description = forms.CharField(max_length= 255)
+    
+class SightingForm(ModelForm):
+    class Meta:
+        model= Sighting
+        fields = ["animal", "location", "description"]
+
     
         
