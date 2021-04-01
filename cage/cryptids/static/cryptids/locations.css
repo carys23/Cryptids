@@ -57,21 +57,6 @@
     display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
     
     background-image: url(./worldmap.jpg);
@@ -100,7 +85,15 @@ a {
    /* list-style: none;*/
     letter-spacing: 2.5px;
 }
-li:before{
+li:before {
     content: "\2625";
 
+}
+
+h1 {
+    margin-left: 5%;
+}
+
+li .sightings:before {
+    content: '';
 }
