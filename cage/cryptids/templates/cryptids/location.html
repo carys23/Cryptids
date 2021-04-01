@@ -37,15 +37,16 @@
 </div>
 
 <div class="about">
-
+    
     <h1>{{ location }}</h1>
     <ul>
         {% for animal in animals %}
         <li>
-            <a href="{% url 'detail' animal.id %}">
-               <h2> {{ animal.name }} </h2>
-               <div class="main_profile"><img src="{{ animal.image.url }}"> </div>
+            <div class="about4">
+               <h2> <a href="{% url 'detail' animal.id %}"> {{ animal.name }} </h2>
+               <img src="{{ animal.image.url }}"> 
             </a>
+        </div>
         </li>
 
         {% empty %}
