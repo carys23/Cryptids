@@ -163,7 +163,9 @@ h1 {
 
 h2>a{
     text-decoration: none;
-    color:#23a897 ;
+     font-size: 80px;
+    font-family: 'New Tegomin' ;
+    color: #23a897;
 }
 
 
@@ -181,5 +183,12 @@ h2>a{
     background-color: white;
     opacity: 80%;
     list-style-type: none;
+    
+}
+
+.about4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
     
 }
