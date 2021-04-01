@@ -24,17 +24,26 @@ class Animal(models.Model):
     likes = models.IntegerField(default=0)
     
     def __str__(self):
-        return(f"{self.name},{self.type},{self.description}")
+        return(f"{self.name}, {self.type}")
 
-class Sighting(ModelForm):
-    location = forms.ModelChoiceField(queryset = Location.objects.all())
-    animal = forms.ModelChoiceField(queryset = Animal.objects.all())
-    description = forms.CharField(max_length= 255)
+class Sighting(models.Model):
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    animal = models.ForeignKey(Animal, on_delete=models.CASCADE)
+    description = models.TextField()
+
+    def __str__(self):
+        return(f"{self.animal}, {self.location}")
     
 class SightingForm(ModelForm):
     class Meta:
-        model= Sighting
-        fields = ["animal", "location", "description"]
+        model = Sighting
+        fields = '__all__'
+        labels = {
+            'location': 'Location',
+            'animal': 'Animal',
+            'description': 'Description'
+        }
+
 
     
         

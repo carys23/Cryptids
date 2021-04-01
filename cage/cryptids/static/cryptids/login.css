@@ -67,7 +67,7 @@ body {
     width: 240px;
     border-radius: 4px;
     background-color: #373b3d;
-    padding: 8px 0px;
+    padding: 16px 0px;
     margin-top: 15px;
 }
 
@@ -195,6 +195,9 @@ input[type=email]:focus {
     margin-bottom: 10px;
 }
 
+.description {
+    margin-top: 20px;
+}
 /*.form{
     width: 500px;
     padding: 20px;

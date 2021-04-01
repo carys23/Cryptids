@@ -41,12 +41,28 @@
 
     <li>
         <a href="{% url 'location' location.id %}">
-            {{ location.location_place }} {{ location.country_place }}
+            {{ location.location_place }}, {{ location.country_place }}
         </a>
     </li>
 
     {% empty %}
     <li>No locations</li>
+
+    {% endfor %}
+</ul>
+
+<h1>Sightings</h1>
+ 
+<ul>
+    {% for sighting in sightings %}
+
+    <li class = "sightings">
+        <h2>{{ sighting.animal }}, {{ sighting.location }}</h2>
+        <p>{{ sighting.description }}</p>    
+    </li>
+
+    {% empty %}
+    <li>No sightings</li>
 
     {% endfor %}
 </ul>

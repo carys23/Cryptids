@@ -12,36 +12,35 @@
 <div id="container-add_animal">
     <div id="title">
         <i class="material-icons pets"> pets</i> Add sighting
-
     </div>
     
-    <form method="POST" action="{% url 'locations' %}">
+    <form method="POST" action="">
         {% csrf_token %}
         <div class="input" >
             <div class="input-addon">
                 <i class="material-icons">pets </i>
             </div>
-            <input id="username" placeholder="Animal name" type="text" required class="validate" autocomplete="off" name="animal_name">
+            <select id="username" name="animal">
+                {% for animal in animals %}
+                    <option value="{{ animal.id }}">{{ animal.name }}</option>
+                {% endfor %}
+            </select>
         </div>
-
         <div class="clearfix"></div>
-
-        <div class="input">
+        <div class="input" >
             <div class="input-addon">
                 <i class="material-icons">add_location </i>
             </div>
-            <input id="location" placeholder="Location" type="text" required class="validate" autocomplete="off" name = "location">
+                <select id="location" name="location">
+                    {% for location in locations %}
+                        <option value="{{ location.id }}">{{ location.location_place }}</option>
+                    {% endfor %}
+                </select>
         </div>
-
-        <div>
-            <br>
-            Animal Description:<br>
-             <br>
-            <textarea name="text" rows="5" cols="20" placeholder="Description"></textarea> <br>
-            <br>
-            <input type="submit" value="submit" /> <br>
-
+        <div class="description">
+            <textarea name="description" rows="5" cols="20" placeholder="Description"></textarea> <br>
+            <button type="submit" class="btn btn-submit">Submit</button>
         </div>
-
     </form>
+</div>
 {% endblock %}
