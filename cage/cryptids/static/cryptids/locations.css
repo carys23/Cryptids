@@ -1,11 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@200&family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+
+
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #23a897 ;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: grid;
+    margin-left: 80px;
+    
+
+}
+
+
+
+.div_icons {
+    background-color:#23a897;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+    border-radius: 55%;
+    
+
+}
+
+.div_icons>p {
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;}
+
+.div_icons>a {
+    text-decoration: none;
+    color: white;}
+    
+.icons a:hover {
+        color: black;}
+
+.icons {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
     
-    background-image: url(./worldmap.png);
+    background-image: url(./worldmap.jpg);
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: top 35px right 60px;
+    background-size: 76%;
+    background-position: top 55px right 60px;
     padding: 0;
     margin: 0;
 }
@@ -19,6 +91,7 @@ li {
     text-decoration: none;
     
 }
+
 a {
     text-decoration: none;
     color: rgb(15, 15, 15);
