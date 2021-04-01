@@ -58,10 +58,15 @@ h1 {
     margin-top: 40px;
     color: white;
     font-size: 75px;
+    opacity: 80%;
 
     font-family: 'New Tegomin' ;
 }
 .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     font-size: 50px;
     font-family: 'New Tegomin' ;
     color: #23a897;
@@ -138,6 +143,8 @@ h1 {
     background-color: white;
     opacity: 80%;
     list-style-type: none;
+    width: 100%;
+
 }
 
 .about2 {
@@ -149,10 +156,30 @@ h1 {
     margin-top: 40px;
     color:#003D35;
     font-size: 30px;
-    font-family: 'Kiwi Maru';}
+    font-family: 'Kiwi Maru';
+    padding-right: 20px;
+    padding-left: 20px;}
 
 
 h2>a{
     text-decoration: none;
     color:#23a897 ;
+}
+
+
+.about3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-left: 4px dotted#23a897;
+    border-right: 4px dotted #23a897;
+    border-top: 4px dotted#23a897;
+    border-bottom: 4px dotted#23a897;
+    padding: 8px, 8px, 8px, 8px;
+    background-color: white;
+    opacity: 80%;
+    list-style-type: none;
+    
 }

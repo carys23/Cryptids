@@ -11,9 +11,9 @@
 
 <div class="icons">
    <div class="div_icons"> <a href="{% url 'index' %}" class="icon-block">
-      <i class="material-icons home" style="font-size:80px;">home</i> </a>
-   <p>Home</p>
-</div>
+         <i class="material-icons home" style="font-size:80px;">home</i> </a>
+      <p>Home</p>
+   </div>
 
 
    <div class="div_icons"><a href="{% url 'locations' %}" class="icon-block">
@@ -37,14 +37,17 @@
 
 <h1>{{ animal.name }}</h1>
 
-<div class="about">
+<div class="about3">
 
    <div class="main_profile"><img src="{{ animal.image.url }}"></div>
+
    <div class="about2">
       {{ animal.description }}
    </div>
+</div>
+
    <div class="location">
       {{ animal.location }}
    </div>
-</div>
+
 {% endblock %}

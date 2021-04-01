@@ -74,10 +74,10 @@
 
 body{
     
-    background-image: url(./worldmap.png);
+    background-image: url(./worldmap.jpg);
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: top 35px right 60px;
+    background-size: 76%;
+    background-position: top 55px right 60px;
     padding: 0;
     margin: 0;
 }
